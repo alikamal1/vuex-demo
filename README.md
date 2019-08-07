@@ -1,8 +1,10 @@
 # vuex
 `dispatch an action` -> `action commit a mutation` -> `mutation modify state` -> `getter return state`
 
+
 ```javascript
 this.$store.dispatch("moveToSecondArray", element);
+
 
 ```
 #### state
