@@ -1,28 +1,54 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <FirstComponent />
+    <SecondComponent />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FirstComponent from "./components/FirstComponent.vue";
+import SecondComponent from "./components/SecondComponent.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld
+    FirstComponent,
+    SecondComponent
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.container {
+  box-shadow: 1px 1px 2px 1px #ccc;
+  margin: 20px;
+  padding: 20px;
+  display: inline-block;
+  width: 300px;
+  vertical-align: top;
+}
+.row h4 {
+  display: inline-block;
+  width: 30%;
+  margin: 0 0 10px 0;
+  box-sizing: border-box;
+}
+
+.row span {
+  width: 30%;
+  color: red;
+  cursor: pointer;
+}
+
+.row span:hover {
+  color: darkred;
 }
 </style>
