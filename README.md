@@ -1,4 +1,4 @@
-# vuex
+# vuex-demo
 `dispatch an action` -> `action commit a mutation` -> `mutation modify state` -> `getter return state`
 
 
